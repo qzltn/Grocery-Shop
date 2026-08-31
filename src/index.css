@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@theme{
+  --color-mamad:rgb(27, 48, 34);
+}
