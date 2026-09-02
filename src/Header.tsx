@@ -1,45 +1,124 @@
-import React from 'react'
-import headerimage from "../public/hero_bg-iD2fuyEl.jpeg";
+
 
 const Header = () => {
   return (
-    <header className="relative  rounded-lg m-3 px-4 bg-[url('/hero_bg-iD2fuyEl.jpeg')] py-6 bg-cover bg-center bg-no-repeat ">
-      <div className="absolute inset-0 bg-gradient-to-r from-mamad  to-transparent"></div>
-      <span className="z-50 mt-30 rounded-full border border-white/30 bg-white/20 px-2 py-3 text-black backdrop-blur-md text-orange-300 flex ">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          className="z-50 lucide lucide-leaf size-3"
-          aria-hidden="true"
+    <header
+      className="
+        relative
+        mx-3
+        min-h-[590px]
+        overflow-hidden
+        rounded-2xl
+        bg-[url('/hero_bg-iD2fuyEl.jpeg')]
+        bg-cover
+        bg-center
+        bg-no-repeat
+        px-5
+        py-6
+        sm:min-h-[600px]
+        lg:min-h-[650px]
+      "
+    >
+      {}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent"></div>
+
+      {}
+      <div className="relative z-10 flex flex-col items-start pt-36">
+        
+        {}
+        <span
+          className="
+            flex
+            items-center
+            gap-2
+            rounded-full
+            border
+            border-white/30
+            bg-white/20
+            px-4
+            py-2
+            text-sm
+            font-semibold
+            text-orange-200
+            backdrop-blur-md
+          "
         >
-          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
-          <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
-        </svg>
-        Farm-Fresh & Organic
-      </span>
-      <h1 className="z-50 text-3xl font-bold mt-6">
-        Nourish your home with
-        <span className="text-orange-300 z-50">Earth's finest</span>
-      </h1>
-      <p className="mt-3 text-gray-500 mt-6 z-50">
-        Fresh, organic groceries delivered from local farms to your doorstep.
-        Quality you can taste, convenience you deserve.
-      </p>
-      <button className="mt-5 rounded-3xl bg-orange-400 text-white px-4 py-2 font-semibold ">
-        Shop Now
-      </button>
-      <button className="rounded-full border border-white/30 bg-white/20 px-5 py-3 text-white backdrop-blur-md ">
-        Browse Categories
-      </button>
+          <span>🌿</span>
+          Farm-Fresh & Organic
+        </span>
+
+        {/* Title */}
+        <h1
+          className="
+            mt-6
+            max-w-md
+            text-3xl
+            font-bold
+            leading-tight
+            text-white
+            sm:text-4xl
+            lg:text-5xl
+          "
+        >
+          Nourish your home with{" "}
+          <span className="text-orange-300">
+            Earth's finest
+          </span>
+        </h1>
+
+        {}
+        <p
+          className="
+            mt-4
+            max-w-md
+            text-sm
+            leading-6
+            text-white/80
+            sm:text-base
+          "
+        >
+          Fresh, organic groceries delivered from local farms
+          to your doorstep. Quality you can taste,
+          convenience you deserve.
+        </p>
+{}
+        <div className="mt-6 flex flex-wrap gap-3">
+          <button
+            className="
+              rounded-full
+              bg-orange-400
+              px-5
+              py-3
+              font-semibold
+              text-white
+              transition
+              hover:bg-orange-500
+            "
+          >
+            Shop Now
+          </button>
+
+          <button
+            className="
+              rounded-full
+              border
+              border-white/30
+              bg-white/20
+              px-5
+              py-3
+              font-semibold
+              text-white
+              backdrop-blur-md
+              transition
+              hover:bg-white/30
+            "
+          >
+            Browse Categories
+          </button>
+        </div>
+      </div>
     </header>
   );
-}
+};
 
-export default Header
+export default Header;

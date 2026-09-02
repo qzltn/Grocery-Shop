@@ -1,9 +1,25 @@
-import React from "react";
+
 import { FiShoppingCart, FiMenu } from "react-icons/fi";
+
 const Navbar = () => {
   return (
-    <nav className="flex w-full  justify-between  py-4 px-4">
-        <div className="flex items-center gap-2">
+    <nav
+      className="
+        flex
+        w-full
+        items-center
+        justify-between
+        px-4
+        py-4
+        sm:px-6
+        lg:px-10
+      "
+    >
+      {}
+      <div className="flex items-center gap-2">
+     
+
+            <div className="flex items-center gap-2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -23,10 +39,13 @@ const Navbar = () => {
       </svg>
       <span className="font-semibold"> InstantMart</span>
       </div>
-      <span className="flex items-center gap-4 ">
+      </div>
+
+      {}
+      <div className="flex items-center gap-4 text-gray-700">
         <FiShoppingCart size={22} />
-        <FiMenu size={24} />
-      </span>
+        <FiMenu size={25} />
+      </div>
     </nav>
   );
 };
