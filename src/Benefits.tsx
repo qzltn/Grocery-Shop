@@ -5,7 +5,7 @@ import { FiShield } from "react-icons/fi";
 
 const Benefits = () => {
   return (
-    <section className="px-4 py-8">
+    <section className="px-4 py-8 bg-white rounded-lg m-5">
 
       <div className="grid grid-cols-2 gap-4">
 
