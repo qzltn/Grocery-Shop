@@ -1,6 +1,6 @@
 
 import { FiShoppingCart, FiMenu } from "react-icons/fi";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav
@@ -15,7 +15,7 @@ const Navbar = () => {
         lg:px-10
       "
     >
-      {}
+      
       <div className="flex items-center gap-2">
      
 
@@ -43,8 +43,11 @@ const Navbar = () => {
 
       {}
       <div className="flex items-center gap-4 text-gray-700">
+        <Link to="./Cart.tsx" className="flex items-center>">
+
         <FiShoppingCart size={22} />
         <FiMenu size={25} />
+        </Link>
       </div>
     </nav>
   );

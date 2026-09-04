@@ -1,4 +1,5 @@
-import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Cart from './cart'
 import Navbar from './Navbar'
 import Header from './Header'
 import Benefits from './Benefits'
@@ -9,15 +10,35 @@ import Subscribe from './Subscribe'
 
 export const App = () => {
   return (
-    <div className="bg-orange-50">
-    
-    <Navbar/>
-    <Header/>
-    <Benefits/>
-    <BrowseCategories/>
-    <Products/>
-    <Delivery/>
-    <Subscribe/>
-    </div>
+    <BrowserRouter>
+      <div className="bg-orange-50">
+
+        <Navbar />
+
+        <Routes>
+
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Benefits />
+                <BrowseCategories />
+                <Products />
+                <Delivery />
+                <Subscribe />
+              </>
+            }
+          />
+
+          <Route
+            path="/cart"
+            element={<Cart />}
+          />
+
+        </Routes>
+
+      </div>
+    </BrowserRouter>
   )
 }
