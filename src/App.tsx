@@ -4,6 +4,8 @@ import Header from './Header'
 import Benefits from './Benefits'
 import BrowseCategories from './BrowseCategories'
 import Products from './ Products'
+import { Delivery } from './Delivery'
+import Subscribe from './Subscribe'
 
 export const App = () => {
   return (
@@ -14,6 +16,8 @@ export const App = () => {
     <Benefits/>
     <BrowseCategories/>
     <Products/>
+    <Delivery/>
+    <Subscribe/>
     </div>
   )
 }
